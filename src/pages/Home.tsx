@@ -91,6 +91,7 @@ export default function Home() {
                     <li>Vitest 단위 테스트 및 E2E 시나리오 문서 추가</li>
                     <li>랜딩페이지에 프로그램 소개 및 사용법 안내 추가</li>
                     <li>실제 사용 화면 캡처를 랜딩페이지에 추가</li>
+                    <li>SPA 라우팅 404 대응 및 채점 화면 내보내기 버튼 추가</li>
                   </ul>
                 </div>
                 <div>
