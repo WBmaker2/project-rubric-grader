@@ -117,6 +117,27 @@ export default function Home() {
         </CardContent>
       </Card>
 
+      <Card>
+        <CardHeader><CardTitle className="text-base">사용 예시 (실제 화면)</CardTitle></CardHeader>
+        <CardContent>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              { src: '01-home.png', caption: '1. 홈: 루브릭 목록과 사용법 안내' },
+              { src: '02-rubric-editor.png', caption: '2. 루브릭 에디터: 항목·수준·가중치 설정' },
+              { src: '03-students.png', caption: '3. 학생 관리: CSV 가져오기/수동 추가' },
+              { src: '04-grading.png', caption: '4. 채점: 수준 클릭과 코멘트' },
+              { src: '05-dashboard.png', caption: '5. 통계: 항목별 평균과 분포' },
+              { src: '06-export.png', caption: '6. 내보내기: CSV/Excel/PDF' },
+            ].map((img) => (
+              <figure key={img.src} className="space-y-2">
+                <img src={`${import.meta.env.BASE_URL}screenshots/${img.src}`} alt={img.caption} className="w-full rounded-md border" loading="lazy" />
+                <figcaption className="text-xs text-muted-foreground">{img.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+
       {rubrics.length === 0 && (
         <Card>
           <CardContent className="py-12 text-center text-muted-foreground">
