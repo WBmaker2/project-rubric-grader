@@ -102,6 +102,21 @@ export default function Home() {
         </div>
       </header>
 
+      <Card>
+        <CardHeader><CardTitle className="text-base">이 프로그램은?</CardTitle></CardHeader>
+        <CardContent className="space-y-2 text-sm text-muted-foreground">
+          <p>교사가 프로젝트/수행평가를 루브릭으로 채점하고, 학생별 점수·피드백과 통계를 관리하는 웹앱입니다. 모든 데이터는 브라우저(IndexedDB)에 저장됩니다.</p>
+          <ol className="list-decimal pl-5 space-y-1">
+            <li><b>새 루브릭</b>으로 평가 항목, 수준(1~4), 가중치를 만듭니다.</li>
+            <li><b>학생 관리</b>에서 CSV 가져오기 또는 수동으로 학생을 등록합니다.</li>
+            <li>홈에서 루브릭의 <b>채점</b>을 눌러 학생별로 수준을 클릭하고 코멘트를 저장합니다.</li>
+            <li><b>통계</b>에서 항목별 평균과 총점 분포를 확인합니다.</li>
+            <li><b>내보내기</b>로 CSV/Excel/PDF 파일을 저장합니다.</li>
+          </ol>
+          <p>백업/복원 버튼으로 데이터를 JSON으로 보관할 수 있고, 루브릭 복제로 템플릿을 재사용할 수 있습니다.</p>
+        </CardContent>
+      </Card>
+
       {rubrics.length === 0 && (
         <Card>
           <CardContent className="py-12 text-center text-muted-foreground">
