@@ -80,13 +80,26 @@ export default function Home() {
             <DialogTrigger render={<Button variant="outline">업데이트 내역</Button>} />
             <DialogContent>
               <DialogHeader><DialogTitle>업데이트 내역</DialogTitle></DialogHeader>
-              <div className="space-y-2 text-sm">
-                <p className="font-semibold">2026-11-05</p>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>프로젝트 루브릭 평가 도구 초기 구현</li>
-                  <li>루브릭 에디터, 학생 관리(CSV), 채점 UI, 점수/피드백 계산, 통계 대시보드, CSV/Excel/PDF 내보내기</li>
-                  <li>접근성, 인쇄 CSS, 성능 개선, 백업/복원, 루브릭 복제, 테스트 추가</li>
-                </ul>
+              <div className="space-y-4 text-sm">
+                <div>
+                  <p className="font-semibold">2026-11-09</p>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li>접근성 개선(ARIA 라벨, 스킵 링크, 포커스)</li>
+                    <li>인쇄 CSS 및 인쇄 버튼 추가</li>
+                    <li>학생 목록 검색/페이지네이션, 채점 자동저장 디바운스</li>
+                    <li>JSON 백업/복원, 루브릭 복제 기능</li>
+                    <li>Vitest 단위 테스트 및 E2E 시나리오 문서 추가</li>
+                    <li>랜딩페이지에 프로그램 소개 및 사용법 안내 추가</li>
+                    <li>실제 사용 화면 캡처를 랜딩페이지에 추가</li>
+                  </ul>
+                </div>
+                <div>
+                  <p className="font-semibold">2026-11-05</p>
+                  <ul className="list-disc pl-5 space-y-1">
+                    <li>프로젝트 루브릭 평가 도구 초기 구현</li>
+                    <li>루브릭 에디터, 학생 관리(CSV), 채점 UI, 점수/피드백 계산, 통계 대시보드, CSV/Excel/PDF 내보내기 구현</li>
+                  </ul>
+                </div>
               </div>
             </DialogContent>
           </Dialog>
